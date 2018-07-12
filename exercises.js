@@ -421,6 +421,19 @@ var isAutomaticTransmission = detectingTransmission(stockCar);
 
 
 
+function addDriver (obj, person){
+    obj.driver = person;
+    return obj;
+}
+
+var newStockCarDriver = addDriver(stockCar, plainPerson);
+console.log(newStockCarDriver);
+
+
+
+
+
+
 /*
     #Final Boss
     The Dev League instructors want to ride your whip!
