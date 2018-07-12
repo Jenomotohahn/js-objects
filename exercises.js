@@ -87,15 +87,6 @@ console.log(kicks);
 console.log(kicks.buy());
 
 
-
-
-
-
-
-
-
-
-
 /* 
 
 4. Declare a variable named `plainBox` and set its value to be an EMPTY object.
@@ -106,6 +97,17 @@ console.log(kicks.buy());
 
   console.log the object
 */
+
+
+var plainBox = {};
+plainBox.color = 'Green';
+plainBox.size = 15;
+plainBox.contents= [];
+
+console.log(plainBox);
+
+
+
 
 
 /*
