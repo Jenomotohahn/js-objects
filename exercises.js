@@ -287,7 +287,7 @@ var sumObj = {
 
 function objectAddition(obj){
     obj.result = obj.a + obj.b;
-    return obj
+    return obj;
 }
 
 var sumObjectResult = objectAddition(sumObj);
@@ -315,6 +315,43 @@ console.log(sumObjectResult);
         Invoke this function and pass in your object. Further test by changing the values of the object being passed in or 
         **create more** objects and invoke your function multiple times.
  */
+
+
+function printObj(obj2){
+    console.log(obj2.a + " + " + obj2.b + " = " + obj2.result);
+    obj2.output =  obj2.a + " + " + obj2.b + " = " + obj2.result;
+    return obj2;
+    
+}
+
+var printSumObject = printObj(sumObjectResult);
+console.log(printSumObject);
+
+
+sumObj.a = 10;
+sumObj.b = 5;
+
+var newSumObjectResult = objectAddition(sumObj);
+console.log(newSumObjectResult);
+
+var newPrintSumObject = printObj(sumObjectResult);
+console.log(newPrintSumObject);
+
+sumObj.a = 100;
+sumObj.b = 1000;
+sumObj.c = 30;
+sumObj.d = 'hello';
+
+var newSumObjectResult1 = objectAddition(sumObj);
+console.log(newSumObjectResult);
+
+var newPrintSumObject2 = printObj(sumObjectResult);
+console.log(newPrintSumObject);
+
+
+
+
+
 
 
 /*
