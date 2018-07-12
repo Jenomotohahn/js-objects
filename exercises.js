@@ -17,7 +17,7 @@ Objects in Javascript can be compared to objects in real life. Objects has a col
 
 var books = {
     title: 'The Obstacle is the Way',
-    author: 'Ryan Holiday';
+    author: 'Ryan Holiday',
     category: 'Self Help',
     pages: 200
 };
@@ -39,6 +39,21 @@ console.log(books);
  
  "My dog `name` is `age` year old and likes to `speak` at strangers."
 */ 
+
+
+
+var dog = {
+    name: 'Kiko',
+    age: 18,
+    vegetarian: false,
+    color: ['white', 'tan'],
+    speak: function(){
+        return 'bark!'
+    }
+}
+
+console.log('My dog is ' + dog.age + ' years old and likes to '+ dog.speak() + ' at strangers.');
+
 
 
 
