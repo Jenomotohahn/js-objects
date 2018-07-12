@@ -392,6 +392,20 @@ console.log(plainBoxResult);
  */
 
 
+function detectingTransmission(obj){
+    if (obj.transmission === true){
+        console.log('The car has an automatic transmission.');
+    }else{
+        console.log('The car does not have an automatic transmission.');
+    }
+}
+
+var isAutomaticTransmission = detectingTransmission(stockCar);
+
+
+
+
+
 /*
 12.  Who's driving this thing?!
      As you may have noticed that the `stockCar` doesn't have a driver!
