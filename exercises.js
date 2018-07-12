@@ -132,13 +132,6 @@ var stockCar = {
 console.log(stockCar);
 
 
-
-
-
-
-
-
-
 /*
 
 6. Add new property inside a function
@@ -155,6 +148,25 @@ console.log(stockCar);
    the return value in a variable named `completePerson`. Use `console.log` three times to print the entire object, just 
    the value at `name`, and just the value at `age`.
  */
+
+
+var plainPerson = {};
+
+function buildPerson(person, nameString, age){
+    person.nameString = nameString;
+    person.age = age;
+    return person;
+}
+
+completePerson = buildPerson(plainPerson, 'Dallas', 31);
+console.log(plainPerson);
+console.log(plainPerson.nameString);
+console.log(plainPerson.age);
+
+
+
+
+
 
 
 /*
