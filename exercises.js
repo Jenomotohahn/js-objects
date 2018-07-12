@@ -365,6 +365,21 @@ console.log(newPrintSumObject);
  */
 
 
+function putInPlainBox(obj){
+    for (i = 0; i < 10 ; i++){
+        obj.contents[i] = Math.floor(Math.random() * 1000);
+    } return obj
+}
+
+var plainBoxResult = putInPlainBox(plainBox);
+console.log(plainBoxResult);
+
+
+
+
+
+
+
 /*
 11. Detecting transmission
     Declare a function named detectingTransmission and a single parameter which will be an object. Within this function 
